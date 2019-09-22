@@ -5,16 +5,9 @@ import {CategoriesComponent} from './categories/categories.component';
 
 // TODO ROUTING PARA MODULO DE TIENDA
 const routes: Routes = [
-  {
-    path: 'articles',
-    component: ArticlesComponent
-  },
-  {
-    path: 'categories',
-    component: CategoriesComponent
-  }
+  {path: 'articles', component: ArticlesComponent},
+  {path: 'categories', component: CategoriesComponent}
 ];
-
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

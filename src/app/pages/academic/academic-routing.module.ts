@@ -5,14 +5,8 @@ import {GradesComponent} from './grades/grades.component';
 
 
 const routes: Routes = [
-  {
-    path: 'subjects',
-    component: SubjectComponent
-  },
-  {
-    path: 'grades',
-    component: GradesComponent
-  }
+  {path: 'subjects',component: SubjectComponent},
+  {path: 'grades', component: GradesComponent}
 ];
 
 @NgModule({

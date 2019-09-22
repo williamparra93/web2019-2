@@ -9,9 +9,6 @@ import { EstudentTableComponent } from './estudent-table/estudent-table.componen
 
 @NgModule({
   declarations: [EstudiantesComponent, EstudentFormComponent, EstudentTableComponent],
-  imports: [
-    CommonModule,
-    EstudiantesRoutingModule
-  ]
+  imports: [CommonModule,EstudiantesRoutingModule]
 })
 export class EstudiantesModule { }

@@ -8,9 +8,6 @@ import { GradesComponent } from './grades/grades.component';
 
 @NgModule({
   declarations: [SubjectComponent, GradesComponent],
-  imports: [
-    CommonModule,
-    AcademicRoutingModule
-  ]
+  imports: [CommonModule,AcademicRoutingModule]
 })
 export class AcademicModule { }

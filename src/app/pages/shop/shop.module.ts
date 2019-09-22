@@ -8,9 +8,6 @@ import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [ArticlesComponent, CategoriesComponent],
-  imports: [
-    CommonModule,
-    ShopRoutingModule
-  ]
+  imports: [CommonModule,ShopRoutingModule]
 })
 export class ShopModule { }

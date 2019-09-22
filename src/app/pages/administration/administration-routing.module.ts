@@ -6,19 +6,9 @@ import {PermissionsComponent} from './permissions/permissions.component';
 
 
 const routes: Routes = [
-  {
-    path: 'roles',
-    component: RolesComponent
-  },
-  {
-    path: 'users',
-    component: UsersComponent
-  },
-  {
-    path: 'permissions',
-    component: PermissionsComponent
-  }
-
+  {path: 'roles', component: RolesComponent},
+  {path: 'users', component: UsersComponent},
+  {path: 'permissions', component: PermissionsComponent}
 ];
 
 @NgModule({
