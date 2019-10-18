@@ -1,1 +1,25 @@
-<p>autores works!</p>
+<header>{{titulo}}</header>
+
+<form>
+    <b> Nombres: {{nombres}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="nombres" name="nombres" />
+    <br>
+    <br>
+    <b> Apellidos: {{apellidos}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="apellidos" name="apellidos" />
+    <br>
+    <br>
+    <b> Fecha de Nacimiento: {{fec_nac}}</b> 
+    <br>
+    <input type="date" [(ngModel)]="fec_nac" name="fecha" />
+    <br>
+    <br>
+    <b> Nacionalidad: {{nacionalidad}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="nacionalidad" name="nacionalidad" />
+    <br>
+    <br>
+    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+</form>

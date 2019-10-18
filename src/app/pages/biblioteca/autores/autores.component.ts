@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AutoresComponent implements OnInit {
 
+  public titulo = "Formulario de Autores";
+  public nombres: String;
+  public apellidos: string;
+  public fec_nac: string;
+  public nacionalidad: string;
+
   constructor() { }
 
   ngOnInit() {
   }
+  
+  SaveForm (){
+    
+  }
 
 }
+
