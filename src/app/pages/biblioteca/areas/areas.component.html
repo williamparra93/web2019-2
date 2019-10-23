@@ -1,1 +1,18 @@
-<p>areas works!</p>
+<h1>{{titulo}}</h1>
+<br>
+<form>
+    <b> Codigo Area: {{codigo}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="codigo" name="codigo" />
+    <br><br>
+    <b> Nombre: {{Nombre}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="nombre" name="nombre" />
+    <br><br>
+    <b> Descripción: {{descripcion}}</b> 
+    <br>
+    <textarea placeholder="Escrbir Descripción" name="descripcion" cols="30" rows="8"></textarea>
+    <br><br>
+    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+</form>
+

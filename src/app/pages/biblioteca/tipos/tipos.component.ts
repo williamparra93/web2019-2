@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TiposComponent implements OnInit {
 
+  public titulo = "Formulario de Tipos";
+  public codigo: String;
+  public nombre: String;
+  public descripcion: String;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  SaveForm (){
+    
   }
 
 }

@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorialComponent implements OnInit {
 
+  public titulo = "Formulario de Editorial";
+  public codigo: String;
+  public nombre: String;
+  public descripcion: String;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  SaveForm (){
+    
   }
 
 }
