@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-autores',
@@ -7,19 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AutoresComponent implements OnInit {
 
-  public titulo = "Formulario de Autores";
-  public nombres: String;
-  public apellidos: string;
-  public fec_nac: string;
-  public nacionalidad: string;
+  public autorForm: FormGroup;
 
-  constructor() { }
+  constructor(protected fb:FormBuilder) { }
 
   ngOnInit() {
   }
   
-  SaveForm (){
+  createForm(){
+    this.autorForm = this.fb.group({
+      codigo: "",
+      nombre: "",
+      fec_nac: ""
+    })
     
+
+
   }
 
 }

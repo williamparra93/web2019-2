@@ -1,21 +1,19 @@
-<h1>{{titulo}}</h1>
+{{autorForm.value | json()}}
 
-<form>
-    <b> Nombres: {{nombres}}</b> 
+<form formGroup="autorForm">
+    <b> Codigo</b> 
     <br>
-    <input type="text" [(ngModel)]="nombres" name="nombres" />
+    <input type="text" fomrControlName="codigo" name="codigo" />
     <br><br>
-    <b> Apellidos: {{apellidos}}</b> 
+    <b> Nombre</b> 
     <br>
-    <input type="text" [(ngModel)]="apellidos" name="apellidos" />
+    <input type="text" formControlName="nombre" name="nombre" />
     <br><br>
-    <b> Fecha de Nacimiento: {{fec_nac}}</b> 
+    <b> Fecha de Nacimiento:</b> 
     <br>
-    <input type="date" [(ngModel)]="fec_nac" name="fecha" />
-    <br><br>
-    <b> Nacionalidad: {{nacionalidad}}</b> 
-    <br>
-    <input type="text" [(ngModel)]="nacionalidad" name="nacionalidad" />
+    <input type="date" formControlName="fec_nac" name="fecha" />
     <br><br>
     <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
 </form>
+
+
