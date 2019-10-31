@@ -1,9 +1,9 @@
-{{autorForm.value | json()}}
+{{autorForm.value | json }}
 
-<form formGroup="autorForm">
+<form [formGroup]="autorForm">
     <b> Codigo</b> 
     <br>
-    <input type="text" fomrControlName="codigo" name="codigo" />
+    <input type="text" formControlName="codigo" name="codigo" />
     <br><br>
     <b> Nombre</b> 
     <br>

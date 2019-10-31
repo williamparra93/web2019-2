@@ -10,7 +10,9 @@ export class AutoresComponent implements OnInit {
 
   public autorForm: FormGroup;
 
-  constructor(protected fb:FormBuilder) { }
+  constructor(protected fb:FormBuilder) {
+    this.createForm();
+   }
 
   ngOnInit() {
   }
