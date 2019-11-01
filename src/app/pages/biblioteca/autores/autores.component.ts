@@ -19,7 +19,7 @@ export class AutoresComponent implements OnInit {
   
   createForm(){
     this.autorForm = this.fb.group({
-      codigo: ["",[Validators.required]],
+      codigo: ["",[Validators.required,Validators.maxLength(5)]],
       nombre: "",
       apellido: "",     
       fec_nac: ""
