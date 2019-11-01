@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-autores',
@@ -19,14 +19,11 @@ export class AutoresComponent implements OnInit {
   
   createForm(){
     this.autorForm = this.fb.group({
-      codigo: "",
+      codigo: ["",[Validators.required]],
       nombre: "",
+      apellido: "",     
       fec_nac: ""
-    })
-    
-
-
-  }
-
+    })  
+}
 }
 

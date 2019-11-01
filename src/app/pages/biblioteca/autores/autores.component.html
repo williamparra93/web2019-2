@@ -7,13 +7,13 @@
     <br><br>
     <b> Nombre</b> 
     <br>
-    <input type="text" formControlName="nombre" name="nombre" />
+    <input type="text" formControlName="nombre" name="nombre"/>
     <br><br>
     <b> Fecha de Nacimiento:</b> 
     <br>
     <input type="date" formControlName="fec_nac" name="fecha" />
     <br><br>
-    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+    <button type="button" class="btn btn-success" [disabled]="autorForm.invalid"  (click)="SaveForm()">Enviar </button> 
 </form>
 
 
