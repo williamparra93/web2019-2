@@ -1,17 +1,11 @@
-<h1>{{titulo}}</h1>
-<br>
-<form>
-    <b> Codigo Editorial: {{codigo}}</b> 
-    <br>
-    <input type="text" [(ngModel)]="codigo" name="codigo" />
-    <br><br>
-    <b> Nombre: {{Nombre}}</b> 
-    <br>
-    <input type="text" [(ngModel)]="nombre" name="nombre" />
-    <br><br>
-    <b> Descripción: {{descripcion}}</b> 
-    <br>
-    <textarea placeholder="Escrbir Descripción" name="descripcion" cols="30" rows="8"></textarea>
-    <br><br>
-    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
-</form>
+{{editorialForm.value | json }}
+
+<form [formGroup]="editorialForm">
+        <br><b> Codigo</b> 
+        <br><input type="text" formControlName="code" name="code" />
+        <br><br><b> Descripción</b> 
+        <br><input type="text" formControlName="description" name="description"/>
+        <br><br><b> Pais</b> 
+        <br><input type="text" formControlName="country" name="country"/>
+        <br><br><button type="button" class="btn btn-success" [disabled]="editorialForm.invalid"  (click)="SaveForm()">Enviar </button> 
+</form>        

@@ -1,23 +1,20 @@
 {{autorForm.value | json }}
 
 <form [formGroup]="autorForm">
-    <b> Codigo</b> 
-    <br>
-    <input type="text" formControlName="codigo" name="codigo" />
-    <br><br>
-    <b> Nombre</b> 
-    <br>
-    <input type="text" formControlName="nombre" name="nombre"/>
-    <br><br>
-    <b> Apellido</b> 
-    <br>
-    <input type="text" formControlName="nombre" name="nombre"/>
-    <br><br>
-    <b> Fecha de Nacimiento:</b> 
-    <br>
-    <input type="date" formControlName="fec_nac" name="fecha" />
-    <br><br>
-    <button type="button" class="btn btn-success" [disabled]="autorForm.invalid"  (click)="SaveForm()">Enviar </button> 
+    <br><b> Codigo</b> 
+    <br><input type="text" formControlName="code" name="code" />
+    <br><br><b> Nombre</b> 
+    <br><input type="text" formControlName="name" name="name"/>
+    <br><br><b> Apellido</b> 
+    <br><input type="text" formControlName="lastname" name="lastname"/>
+    <br><br><b> Fecha de Nacimiento:</b> 
+    <br><input type="date" formControlName="bd_year" name="bd_year" />
+    <br><br><b> Lugar de Nacimiento:</b> 
+    <br><input type="text" formControlName="bd_place" name="bd_place" />
+    <br><br><b> Fecha de Muerte:</b> 
+    <br><input type="date" formControlName="death_year" name="death_year" />
+    <br><br><button type="button" class="btn btn-success" [disabled]="autorForm.invalid"  (click)="SaveForm()">Enviar </button> 
+    
 </form>
 
 
