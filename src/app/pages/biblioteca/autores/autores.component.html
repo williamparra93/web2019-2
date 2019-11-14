@@ -1,5 +1,16 @@
 {{autorForm.value | json }}
 
+<table>
+    <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+    <tr *ngFor = "let autor of authors">
+        <td>{{autor.name}}</td>
+        <td>{{autor.lastname}}</td>    
+    </tr>
+    </tr>    
+</table> 
+
 <form [formGroup]="autorForm">
     <br><b> Codigo</b> 
     <br><input type="text" formControlName="code" name="code" />

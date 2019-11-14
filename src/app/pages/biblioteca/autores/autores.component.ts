@@ -9,6 +9,7 @@ import { AuthorService } from 'src/app/services/author.service';
 })
 export class AutoresComponent implements OnInit {
 
+  public authors:any;
   public autorForm: FormGroup;
 
   constructor(protected fb:FormBuilder, protected service:AuthorService) {
@@ -17,7 +18,7 @@ export class AutoresComponent implements OnInit {
 
   ngOnInit() {
     this.service.getAuthor().subscribe (data=>{
-      console.log(data);
+      this.authors = data
     });
   }
 
